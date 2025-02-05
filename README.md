@@ -34,4 +34,91 @@ Aplikasi generator QR Code modern dengan tampilan yang menarik dan mudah digunak
 ### Langkah Instalasi
 
 1. Clone repository
-# qrcode-generator
+
+```bash
+git clone https://github.com/alfreinsco/qrcode-generator.git
+cd qrcode-generator
+```
+
+2. Install dependencies PHP
+
+```bash
+composer install
+```
+
+3. Setup environment
+
+```bash
+cp .env.example .env
+php artisan key:generate
+```
+
+4. Install package QR Code
+
+```bash
+composer require simplesoftwareio/simple-qrcode
+```
+
+5. Setup storage
+
+```bash
+php artisan storage:link
+mkdir -p storage/app/public/qrcodes
+chmod -R 775 storage
+```
+
+6. Konfigurasi .env
+
+```env
+FILESYSTEM_DISK=public
+```
+
+7. Jalankan server
+
+```bash
+php artisan serve
+```
+
+## 💻 Penggunaan
+
+1. Buka aplikasi di browser: `http://localhost:8000`
+2. Masukkan teks atau URL yang ingin di-generate menjadi QR Code
+3. Pilih ukuran QR Code yang diinginkan
+4. Klik tombol "Generate QR Code"
+5. QR Code akan muncul dan bisa diunduh
+
+## 🔧 Kustomisasi
+
+Anda dapat mengkustomisasi tampilan dengan mengubah:
+
+-   Warna dan style di `resources/views/qrcode-generator.blade.php`
+-   Ukuran QR Code di form select
+-   Konfigurasi QR Code di `QRCodeController.php`
+
+## 🤝 Kontribusi
+
+Kontribusi selalu diterima dengan senang hati:
+
+1. Fork repository
+2. Buat branch baru (`git checkout -b fitur-baru`)
+3. Commit perubahan (`git commit -m 'Menambah fitur baru'`)
+4. Push ke branch (`git push origin fitur-baru`)
+5. Buat Pull Request
+
+## 📝 Lisensi
+
+Project ini dilisensikan di bawah [MIT License](LICENSE).
+
+## 👨‍💻 Author
+
+Dibuat oleh [Alfrein Sco](https://github.com/alfreinsco)
+
+## 📧 Kontak
+
+Jika ada pertanyaan atau masukan, silakan hubungi:
+
+-   GitHub: [@alfreinsco](https://github.com/alfreinsco)
+
+---
+
+⭐ Jangan lupa beri star jika project ini bermanfaat!
