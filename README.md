@@ -111,13 +111,15 @@ Project ini dilisensikan di bawah [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-Dibuat oleh [Alfrein Sco](https://github.com/alfreinsco)
+Dibuat oleh [Marthin Alfreinsco Salakory](https://github.com/alfreinsco)
 
 ## 📧 Kontak
 
 Jika ada pertanyaan atau masukan, silakan hubungi:
 
 -   GitHub: [@alfreinsco](https://github.com/alfreinsco)
+-   Email: [alfreinsco@gmail.com](mailto:alfreinsco@gmail.com)
+-   Whatsapp: [+62 813-1881-2027](https://wa.me/6281318812027)
 
 ---
 
